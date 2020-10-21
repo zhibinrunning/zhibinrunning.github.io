@@ -6,7 +6,7 @@
   <link href="https://zhibinrunning.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhibinrunning.github.io/"/>
-  <updated>2020-10-21T15:16:06.994Z</updated>
+  <updated>2020-10-21T15:22:05.739Z</updated>
   <id>https://zhibinrunning.github.io/</id>
   
   <author>
@@ -21,16 +21,14 @@
     <link href="https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/"/>
     <id>https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/</id>
     <published>2020-10-20T02:31:47.000Z</published>
-    <updated>2020-10-21T15:16:06.994Z</updated>
+    <updated>2020-10-21T15:22:05.739Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;hr&gt;
-&lt;p&gt;​    Intent是Activity之间的跳转。可以用putExtra()方法传递数据，其中如果想要传递对象应该将对象的类继承Serializable接口使其序列化。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;例如&lt;/strong&gt;：&lt;code&gt;public class</summary>
+    <summary type="html">&lt;h1 id=&quot;Intent相关&quot;&gt;&lt;a href=&quot;#Intent相关&quot; class=&quot;headerlink&quot; title=&quot;Intent相关&quot;&gt;&lt;/a&gt;Intent相关&lt;/h1&gt;&lt;h2 id=&quot;Intent的基础用法&quot;&gt;&lt;a href=&quot;#Intent的基础用法&quot;</summary>
         
       
     
