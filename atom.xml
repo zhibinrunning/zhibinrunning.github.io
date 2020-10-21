@@ -6,7 +6,7 @@
   <link href="https://zhibinrunning.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhibinrunning.github.io/"/>
-  <updated>2020-10-20T03:27:04.958Z</updated>
+  <updated>2020-10-21T15:16:06.994Z</updated>
   <id>https://zhibinrunning.github.io/</id>
   
   <author>
@@ -21,23 +21,25 @@
     <link href="https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/"/>
     <id>https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/</id>
     <published>2020-10-20T02:31:47.000Z</published>
-    <updated>2020-10-20T03:27:04.958Z</updated>
+    <updated>2020-10-21T15:16:06.994Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;​    Intent是Activity之间的跳转。可以用putExtra()方法传递数据，其中如果想要传递对象应该将对象的类继承Serializable接口使其序列化。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;例如&lt;/strong&gt;：&lt;code&gt;public class</summary>
         
       
     
     
     
-    <category term="Android" scheme="https://zhibinrunning.github.io/categories/Android/"/>
+    <category term="Android学习笔记" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="Android学习笔记" scheme="https://zhibinrunning.github.io/tags/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="Android" scheme="https://zhibinrunning.github.io/tags/Android/"/>
     
   </entry>
   

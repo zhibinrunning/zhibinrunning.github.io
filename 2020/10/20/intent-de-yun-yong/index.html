@@ -435,8 +435,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">Android学习笔记</span>
+                            <a href="/tags/Android/">
+                                <span class="chip bg-color">Android</span>
                             </a>
                         
                     </div>
@@ -447,8 +447,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Android/" class="post-category">
-                                Android
+                            <a href="/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                Android学习笔记
                             </a>
                         
                     </div>
@@ -467,14 +467,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-10-20
+                    2020-10-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    302
                 </div>
                 
 
@@ -496,7 +496,42 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://raw.githubusercontent.com/zhibinrunning/Images/master/20201020112358.png"></p>
+                <hr>
+<p>​    Intent是Activity之间的跳转。可以用putExtra()方法传递数据，其中如果想要传递对象应该将对象的类继承Serializable接口使其序列化。</p>
+<p><strong>例如</strong>：<code>public class UserInfo implements Serializable{···}</code></p>
+<p> 此处UserInfo实例化出的对象就可以当作参数传递。</p>
+<hr>
+<p>​    传递数据到下一个Activity用的是startActivity()方法，参数是Intent实例。如果需要有数据的返回应该用startActivityForResult()方法，传入两个参数：第一个参数是Intent实例；第二个参数是访问码(requestCode)，访问码是自己设置的，默认为0。startActivityForResult()与重写onActivityResult()方法应配合使用。</p>
+<p><code>onActivityResult()</code>方法是：</p>
+<p><code>protected void onActivityResult(int requestCode,int resultCode,@Nullable Intent data)</code></p>
+<p>方法除了访问码还有一个结果码，所以在第二个有返回值的Activity里应该再设置一个结果码(使用<code>setResult()</code>方法)：</p>
+<pre class=" language-java"><code class="language-java">Intent intent<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">Intent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+intent<span class="token punctuation">.</span><span class="token function">putExtra</span><span class="token punctuation">(</span><span class="token string">"result"</span><span class="token punctuation">,</span><span class="token string">"我回来了"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">setResult</span><span class="token punctuation">(</span>RESULT_CODE<span class="token punctuation">,</span>intent<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>如果此方法的结果码与访问码和设置的结果码与访问码相同，则代表数据返回正确。</p>
+<hr>
+<p>附上使用例子：</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@Override</span>
+
+Protected <span class="token keyword">void</span> <span class="token function">onActivityResult</span><span class="token punctuation">(</span><span class="token keyword">int</span> requestCode<span class="token punctuation">,</span><span class="token keyword">int</span> resultCode<span class="token punctuation">,</span><span class="token annotation punctuation">@Nullable</span> Intent data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">onActivityResult</span><span class="token punctuation">(</span>requestCode<span class="token punctuation">,</span>resultCode<span class="token punctuation">,</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>requestCode <span class="token operator">==</span> REQUEST_CODE <span class="token operator">&amp;&amp;</span> resultCode <span class="token operator">==</span> MainActivity<span class="token punctuation">.</span>RESULT_CODE<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>data<span class="token operator">!=</span>null<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+            String back <span class="token operator">=</span> data<span class="token punctuation">.</span><span class="token function">getStringExtra</span><span class="token punctuation">(</span><span class="token string">"result"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            sp_tv<span class="token punctuation">.</span><span class="token function">setText</span><span class="token punctuation">(</span>back<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span></code></pre>
 
             </div>
             <hr/>
@@ -560,8 +595,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">Android学习笔记</span>
+                                <a href="/tags/Android/">
+                                    <span class="chip bg-color">Android</span>
                                 </a>
                             
                         </div>
@@ -757,8 +792,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Android/" class="post-category">
-                                    Android
+                            <a href="/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    Android学习笔记
                                 </a>
                             
                             
@@ -769,8 +804,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">Android学习笔记</span>
+                    <a href="/tags/Android/">
+                        <span class="chip bg-color">Android</span>
                     </a>
                     
                 </div>
@@ -1051,7 +1086,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">375</span>&nbsp;字
             
             
             
