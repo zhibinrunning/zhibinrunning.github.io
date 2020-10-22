@@ -6,7 +6,7 @@
   <link href="https://zhibinrunning.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhibinrunning.github.io/"/>
-  <updated>2020-10-21T15:22:05.739Z</updated>
+  <updated>2020-10-22T04:10:36.962Z</updated>
   <id>https://zhibinrunning.github.io/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="https://zhibinrunning.github.io/2020/10/22/zi-ding-yi-kong-jian-ji-chu/"/>
+    <id>https://zhibinrunning.github.io/2020/10/22/zi-ding-yi-kong-jian-ji-chu/</id>
+    <published>2020-10-22T02:39:20.397Z</published>
+    <updated>2020-10-22T04:10:36.962Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt; title: 自定义控件基础&lt;br&gt; date: 2020-10-20 10:31:47&lt;br&gt; author: Mr.White&lt;br&gt; tags: Android&lt;br&gt; categories:</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Intent的运用</title>
     <link href="https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/"/>
     <id>https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/</id>
     <published>2020-10-20T02:31:47.000Z</published>
-    <updated>2020-10-21T15:22:05.739Z</updated>
+    <updated>2020-10-22T02:48:14.976Z</updated>
     
     
       
@@ -35,6 +57,8 @@
     
     
     <category term="Android学习笔记" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Intent" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Intent/"/>
     
     
     <category term="Android" scheme="https://zhibinrunning.github.io/tags/Android/"/>
