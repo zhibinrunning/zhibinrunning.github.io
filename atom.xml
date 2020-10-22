@@ -44,6 +44,33 @@
   </entry>
   
   <entry>
+    <title>对float数取小数点后给定位数的方法</title>
+    <link href="https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
+    <id>https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</id>
+    <published>2020-10-20T02:31:47.000Z</published>
+    <updated>2020-10-22T11:11:18.324Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;取小数点后给定位数&quot;&gt;&lt;a href=&quot;#取小数点后给定位数&quot; class=&quot;headerlink&quot; title=&quot;取小数点后给定位数&quot;&gt;&lt;/a&gt;取小数点后给定位数&lt;/h1&gt;&lt;h2 id=&quot;代码演示&quot;&gt;&lt;a href=&quot;#代码演示&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Java学习笔记" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="实用方法" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AE%9E%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    
+    
+    <category term="Java" scheme="https://zhibinrunning.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自定义控件基础</title>
     <link href="https://zhibinrunning.github.io/2020/10/20/zi-ding-yi-kong-jian-ji-chu/"/>
     <id>https://zhibinrunning.github.io/2020/10/20/zi-ding-yi-kong-jian-ji-chu/</id>
@@ -69,33 +96,6 @@
     
     
     <category term="Android" scheme="https://zhibinrunning.github.io/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对float数取小数点后给定位数的方法</title>
-    <link href="https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
-    <id>https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</id>
-    <published>2020-10-20T02:31:47.000Z</published>
-    <updated>2020-10-22T10:55:30.015Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;取小数点后给定位数&quot;&gt;&lt;a href=&quot;#取小数点后给定位数&quot; class=&quot;headerlink&quot; title=&quot;取小数点后给定位数&quot;&gt;&lt;/a&gt;取小数点后给定位数&lt;/h1&gt;&lt;h2 id=&quot;代码演示：&quot;&gt;&lt;a href=&quot;#代码演示：&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java学习笔记" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="实用方法" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AE%9E%E7%94%A8%E6%96%B9%E6%B3%95/"/>
-    
-    
-    <category term="Java" scheme="https://zhibinrunning.github.io/tags/Java/"/>
     
   </entry>
   
