@@ -6,7 +6,7 @@
   <link href="https://zhibinrunning.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhibinrunning.github.io/"/>
-  <updated>2020-10-22T08:33:10.976Z</updated>
+  <updated>2020-10-22T02:48:14.976Z</updated>
   <id>https://zhibinrunning.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Intent的运用</title>
+    <link href="https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/"/>
+    <id>https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/</id>
+    <published>2020-10-20T02:31:47.000Z</published>
+    <updated>2020-10-22T02:48:14.976Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Intent相关&quot;&gt;&lt;a href=&quot;#Intent相关&quot; class=&quot;headerlink&quot; title=&quot;Intent相关&quot;&gt;&lt;/a&gt;Intent相关&lt;/h1&gt;&lt;h2 id=&quot;Intent的基础用法&quot;&gt;&lt;a href=&quot;#Intent的基础用法&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Android学习笔记" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Intent" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Intent/"/>
+    
+    
+    <category term="Android" scheme="https://zhibinrunning.github.io/tags/Android/"/>
+    
+  </entry>
   
   <entry>
     <title>自定义控件基础</title>
@@ -46,29 +73,29 @@
   </entry>
   
   <entry>
-    <title>Intent的运用</title>
-    <link href="https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/"/>
-    <id>https://zhibinrunning.github.io/2020/10/20/intent-de-yun-yong/</id>
+    <title>对float数取小数点后给定位数的方法</title>
+    <link href="https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
+    <id>https://zhibinrunning.github.io/2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</id>
     <published>2020-10-20T02:31:47.000Z</published>
-    <updated>2020-10-22T02:48:14.976Z</updated>
+    <updated>2020-10-22T10:55:30.015Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Intent相关&quot;&gt;&lt;a href=&quot;#Intent相关&quot; class=&quot;headerlink&quot; title=&quot;Intent相关&quot;&gt;&lt;/a&gt;Intent相关&lt;/h1&gt;&lt;h2 id=&quot;Intent的基础用法&quot;&gt;&lt;a href=&quot;#Intent的基础用法&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;取小数点后给定位数&quot;&gt;&lt;a href=&quot;#取小数点后给定位数&quot; class=&quot;headerlink&quot; title=&quot;取小数点后给定位数&quot;&gt;&lt;/a&gt;取小数点后给定位数&lt;/h1&gt;&lt;h2 id=&quot;代码演示：&quot;&gt;&lt;a href=&quot;#代码演示：&quot;</summary>
         
       
     
     
     
-    <category term="Android学习笔记" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="Java学习笔记" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Intent" scheme="https://zhibinrunning.github.io/categories/Android%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Intent/"/>
+    <category term="实用方法" scheme="https://zhibinrunning.github.io/categories/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AE%9E%E7%94%A8%E6%96%B9%E6%B3%95/"/>
     
     
-    <category term="Android" scheme="https://zhibinrunning.github.io/tags/Android/"/>
+    <category term="Java" scheme="https://zhibinrunning.github.io/tags/Java/"/>
     
   </entry>
   
