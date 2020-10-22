@@ -29,9 +29,9 @@
 
     <script src="https://cdn.jsdelivr.net/gh/zhibinrunning/zhibinrunning.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="冲鸭！" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="冲鸭！" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -482,7 +482,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    439
+                    444
                 </div>
                 
 
@@ -504,9 +504,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p> 最基础自定义控件在重写父类View中的onDraw方法中实现。但是实现自定义控件基本功能后如何动态改变自定义控件属性呢？</p>
-<p><strong>步骤如下：</strong></p>
-<p>1、在res文件夹下的values中新建一个文件(一般命名为attrs.xml)，自定义控件的所有属性在此处声明。格式如下：</p>
+                <h1 id="自定义控件用法"><a href="#自定义控件用法" class="headerlink" title="自定义控件用法"></a>自定义控件用法</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>​    最基础自定义控件在重写父类View中的onDraw方法中实现。但是实现自定义控件基本功能后如何动态改变自定义控件属性呢？</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p><strong>步骤如下：</strong></p>
+<h3 id="1、自定义控件属性"><a href="#1、自定义控件属性" class="headerlink" title="1、自定义控件属性"></a>1、自定义控件属性</h3><p>​    在res文件夹下的values中新建一个文件(一般命名为attrs.xml)，自定义控件的所有属性在此处声明。格式如下：</p>
 <pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>resources</span><span class="token punctuation">></span></span>
 
     <span class="token comment" spellcheck="true">&lt;!-- name:自定义控件名 --></span>
@@ -520,15 +520,15 @@
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>resources</span><span class="token punctuation">></span></span></code></pre>
 <p>注意事项：自定义属性名应该跟系统自己属性名区分开，避免功能冲突。</p>
-<p>2、在自定义控件所在类里实现自定义的属性，使其在布局资源里可以使用这些属性控制。</p>
+<h3 id="2、自定义控件属性使用"><a href="#2、自定义控件属性使用" class="headerlink" title="2、自定义控件属性使用"></a>2、自定义控件属性使用</h3><p>​    在自定义控件所在类里实现自定义的属性，使其在布局资源里可以使用这些属性控制。</p>
 <p>代码如下：</p>
 <pre class=" language-java"><code class="language-java">   TypedArray typedArray <span class="token operator">=</span> context<span class="token punctuation">.</span><span class="token function">obtainStyledAttributes</span><span class="token punctuation">(</span>attrs<span class="token punctuation">,</span>R<span class="token punctuation">.</span>styleable<span class="token punctuation">.</span>TestRedButton<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
        mColor <span class="token operator">=</span> typedArray<span class="token punctuation">.</span><span class="token function">getColor</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>styleable<span class="token punctuation">.</span>TestRedButton_mBackground<span class="token punctuation">,</span> Color<span class="token punctuation">.</span>RED<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
        mTextColor <span class="token operator">=</span> typedArray<span class="token punctuation">.</span><span class="token function">getColor</span><span class="token punctuation">(</span>R<span class="token punctuation">.</span>styleable<span class="token punctuation">.</span>TestRedButton_mTextColor<span class="token punctuation">,</span> Color<span class="token punctuation">.</span>WHITE<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
-<p>使用的是TypeArray类的一系列方法，需要传入context和attrs，绿色标注为自定义属性文件所在位置，紫色标注为调用自定义的属性名，蓝色标注为默认值。</p>
-<p>3、在自定义控件类中需要用到自定义属性的地方调用第2步中的粉红色标记的变量即可，最后我们就可以在布局文件中使用该控件并且在控件内使用自定义属性控制控件了。</p>
+<p>使用的是TypeArray类的一系列方法，需要传入context和attrs，<code>R.styleable.TestRedButton</code>为自定义属性文件所在位置，<code>R.styleable.TestRedButton_mBackground</code>和<code>R.styleable.TestRedButton_mTextColor</code>为调用自定义的属性名，<code>Color.RED</code>和<code>Color.WHITE</code>为对应默认值。</p>
+<h3 id="3、调用自定义控件"><a href="#3、调用自定义控件" class="headerlink" title="3、调用自定义控件"></a>3、调用自定义控件</h3><p>​    在自定义控件类中需要用到自定义属性的地方调用第2步中的变量即可(<code>mColor</code>和<code>mTextColor</code>)，最后我们就可以在布局文件中使用该控件并且在控件内使用自定义属性控制控件了。</p>
 <p>示例如下：</p>
 <pre class=" language-xml"><code class="language-xml">&lt;com.example.customcontrol.TestRedButton
 
@@ -545,7 +545,6 @@
    android:layout_height="300dp"
 
    /></code></pre>
-<p>紫色标注位置为自定义的属性，前缀为app：，而系统固有属性前缀为android：。</p>
 
             </div>
             <hr/>
@@ -1170,7 +1169,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">831</span>&nbsp;字
+                class="white-color">836</span>&nbsp;字
             
             
             
