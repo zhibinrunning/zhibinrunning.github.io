@@ -26,16 +26,16 @@
       
       <categories>
           
-          <category> Java学习笔记 </category>
-          
-          <category> Oracle数据库 </category>
+          <category> 数据库 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 数据库 </tag>
+            <tag> Java学习笔记 </tag>
+            
+            <tag> Oracle数据库 </tag>
             
         </tags>
       
@@ -53,16 +53,16 @@
       
       <categories>
           
-          <category> Android学习笔记 </category>
-          
-          <category> Intent </category>
+          <category> Android </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Android </tag>
+            <tag> Android学习笔记 </tag>
+            
+            <tag> Intent </tag>
             
         </tags>
       
@@ -80,16 +80,16 @@
       
       <categories>
           
-          <category> Java学习笔记 </category>
-          
-          <category> 实用方法 </category>
+          <category> Java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Java </tag>
+            <tag> Java学习笔记 </tag>
+            
+            <tag> 实用方法 </tag>
             
         </tags>
       
@@ -107,18 +107,18 @@
       
       <categories>
           
-          <category> Android学习笔记 </category>
-          
-          <category> 自定义控件 </category>
-          
-          <category> view </category>
+          <category> Android </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Android </tag>
+            <tag> Android学习笔记 </tag>
+            
+            <tag> 自定义控件 </tag>
+            
+            <tag> view </tag>
             
         </tags>
       
