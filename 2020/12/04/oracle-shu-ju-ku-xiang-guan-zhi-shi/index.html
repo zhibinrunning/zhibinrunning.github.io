@@ -29,9 +29,9 @@
 
     <script src="https://cdn.jsdelivr.net/gh/zhibinrunning/zhibinrunning.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="alternate" href="/atom.xml" title="冲鸭！" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="冲鸭！" type="application/atom+xml">
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
@@ -471,7 +471,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-12-04
+                    2020-12-05
                 </div>
                 
 
@@ -541,18 +541,15 @@
 </ul>
 <h4 id="2、多行函数学习-max-min-avg-sum-count"><a href="#2、多行函数学习-max-min-avg-sum-count" class="headerlink" title="2、多行函数学习(max,min,avg,sum,count)"></a>2、多行函数学习(max,min,avg,sum,count)</h4><p><strong><em>注意：多行函数不能和普通字段以及单行函数混用，除非分组</em></strong></p>
 <ol>
-<li><p>Max(字段名)：返回该字段的最大值</p>
-</li>
-<li><p>Min(字段名)：返回该字段的最小值</p>
-</li>
-<li><p>Sum(字段名)：返回该字段的和</p>
-</li>
-<li><p>Avg(字段名)：返回该字段的返回值</p>
-</li>
-<li><p>Count：</p>
-<pre><code>* Count(\*)：返回表的记录数
-* Count(字段名)：返回该字段的非空值数量
-* Count(distinct 字段名)：去除该字段重复后的数量</code></pre>
+<li>Max(字段名)：返回该字段的最大值</li>
+<li>Min(字段名)：返回该字段的最小值</li>
+<li>Sum(字段名)：返回该字段的和</li>
+<li>Avg(字段名)：返回该字段的返回值</li>
+<li>Count：<ul>
+<li>Count(*)：返回表的记录数</li>
+<li>Count(字段名)：返回该字段的非空值数量</li>
+<li>Count(distinct 字段名)：去除该字段重复后的数量</li>
+</ul>
 </li>
 </ol>
 <h4 id="3、转换函数"><a href="#3、转换函数" class="headerlink" title="3、转换函数"></a>3、转换函数</h4><h5 id="to-number-数值类型的字符-：将字符转换为数值"><a href="#to-number-数值类型的字符-：将字符转换为数值" class="headerlink" title="to_number(数值类型的字符)：将字符转换为数值"></a>to_number(数值类型的字符)：将字符转换为数值</h5><h5 id="to-char-数值或者日期-：将数值或日期转换为字符"><a href="#to-char-数值或者日期-：将数值或日期转换为字符" class="headerlink" title="to_char(数值或者日期)：将数值或日期转换为字符"></a>to_char(数值或者日期)：将数值或日期转换为字符</h5><ol>
@@ -586,6 +583,10 @@ select A.C,B.C from A,B where A.c=B.d</code></pre>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+</ol>
+<ul>
 <li><p>不等值连接筛选：</p>
 <pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c>=B.d and A.e<=B.f</code></pre>
 </li>
@@ -599,7 +600,7 @@ select A.C,B.C from A,B where A.c=B.d</code></pre>
 <pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c(+)=B.c</code></pre>
 </li>
 </ul>
-</li>
+<ol start="2">
 <li><p>SQL99方式：</p>
 <p>​    <strong><em>注意：如果用on或using关键字对结果进筛选，必须使用inner join作为表与表的连接，其中inner可以省略</em></strong></p>
 <ul>
