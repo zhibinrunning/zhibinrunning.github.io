@@ -21,7 +21,7 @@
       <link href="2020/12/04/oracle-shu-ju-ku-xiang-guan-zhi-shi/"/>
       <url>2020/12/04/oracle-shu-ju-ku-xiang-guan-zhi-shi/</url>
       
-        <content type="html"><![CDATA[<h2 id="Oracle数据库相关知识"><a href="#Oracle数据库相关知识" class="headerlink" title="Oracle数据库相关知识"></a>Oracle数据库相关知识</h2><h3 id="一、存储结构"><a href="#一、存储结构" class="headerlink" title="一、存储结构"></a>一、存储结构</h3><p>1、网状结构</p><p>2、层次结构</p><p>3、关系结构</p><p>4、二维表结构存储：数据，数据的描述，数据的关系。</p><p>5、对象结构</p><p><strong><em>注意：数据库中需要同时用到and和or时，要注意and级别大于or。</em></strong></p><hr><h3 id="二、Oracle忘记用户密码"><a href="#二、Oracle忘记用户密码" class="headerlink" title="二、Oracle忘记用户密码"></a>二、Oracle忘记用户密码</h3><p>cmd打开windows命令窗口</p><p>输入命令: sqlplus  /nolog</p><p>输入命令: conn /as sysdba</p><p>输入命令: alter user 用户名 identified by 新密码</p><hr><h3 id="三、Oracle函数学习"><a href="#三、Oracle函数学习" class="headerlink" title="三、Oracle函数学习"></a>三、Oracle函数学习</h3><h4 id="1、单行函数学习"><a href="#1、单行函数学习" class="headerlink" title="1、单行函数学习"></a>1、单行函数学习</h4><p>字符函数：</p><p>大写变小写字母：lower(char)；小写变大写字母：upper(char)</p><p>首字母大写：initcap(char) ；按字符翻译：translate(char,from,to)</p><p>数值函数：对数值类型数据进行运算</p><p>m保留小数点后n位：trunc(m,n)；取n的符号：sign(n)</p><p>日期函数：</p><h4 id="2、多行函数学习-max-min-avg-sum-count"><a href="#2、多行函数学习-max-min-avg-sum-count" class="headerlink" title="2、多行函数学习(max,min,avg,sum,count)"></a>2、多行函数学习(max,min,avg,sum,count)</h4><p><strong><em>注意：多行函数不能和普通字段以及单行函数混用，除非分组</em></strong></p><p>Max(字段名)：返回该字段的最大值</p><p>Min(字段名)：返回该字段的最小值</p><p>Sum(字段名)：返回该字段的和</p><p>Avg(字段名)：返回该字段的返回值</p><p>Count：</p><p>​    Count(*)：返回表的记录数</p><p>​    Count(字段名)：返回该字段的非空值数量</p><p>​    Count(distinct 字段名)：去除该字段重复后的数量</p><h4 id="3、转换函数"><a href="#3、转换函数" class="headerlink" title="3、转换函数"></a>3、转换函数</h4><p>to_number(数值类型的字符)：将字符转换为数值</p><p>to_char(数值或者日期)：将数值或日期转换为字符</p><h5 id="数值转换："><a href="#数值转换：" class="headerlink" title="数值转换："></a>数值转换：</h5><p>可以指定格式：</p><p>用9占位，例如999，999，999会将数字按照三个一组使用逗号隔开</p><p>用0补位，与9占位相似，但是如果真实数据位数不足会用0补位</p><h5 id="日期转换："><a href="#日期转换：" class="headerlink" title="日期转换："></a>日期转换：</h5><p>to_char(‘日期’,’要转换的格式’)：使用指定格式转换(例如yyyy-mm-dd)</p><p>to_cahr(‘日期’)：使用oracle自带格式转换(自带格式为日月年，例如01-2月-2020)</p><p>to_date(日期格式的字符)：将字符转换为日期</p><hr><h3 id="四、多表查询"><a href="#四、多表查询" class="headerlink" title="四、多表查询"></a>四、多表查询</h3>]]></content>
+        <content type="html"><![CDATA[<h3 id="一、存储结构"><a href="#一、存储结构" class="headerlink" title="一、存储结构"></a>一、存储结构</h3><ol><li><p>网状结构</p></li><li><p>层次结构</p></li><li><p>关系结构</p></li><li><p>二维表结构存储：数据，数据的描述，数据的关系。</p></li><li><p>对象结构</p></li></ol><p><strong><em>注意：数据库中需要同时用到and和or时，要注意and级别大于or。</em></strong></p><hr><h3 id="二、Oracle忘记用户密码"><a href="#二、Oracle忘记用户密码" class="headerlink" title="二、Oracle忘记用户密码"></a>二、Oracle忘记用户密码</h3><ol><li><p>cmd打开windows命令窗口</p></li><li><p>输入命令: sqlplus  /nolog</p></li><li><p>输入命令: conn /as sysdba</p></li><li><p>输入命令: alter user 用户名 identified by 新密码</p></li></ol><hr><h3 id="三、Oracle函数学习"><a href="#三、Oracle函数学习" class="headerlink" title="三、Oracle函数学习"></a>三、Oracle函数学习</h3><h4 id="1、单行函数学习"><a href="#1、单行函数学习" class="headerlink" title="1、单行函数学习"></a>1、单行函数学习</h4><ul><li><p>字符函数：</p><p>大写变小写字母：lower(char)；小写变大写字母：upper(char)</p><p>首字母大写：initcap(char) ；按字符翻译：translate(char,from,to)</p></li></ul><ul><li><p>数值函数：对数值类型数据进行运算</p><p>m保留小数点后n位：trunc(m,n)；取n的符号：sign(n)</p></li></ul><ul><li>日期函数：</li></ul><h4 id="2、多行函数学习-max-min-avg-sum-count"><a href="#2、多行函数学习-max-min-avg-sum-count" class="headerlink" title="2、多行函数学习(max,min,avg,sum,count)"></a>2、多行函数学习(max,min,avg,sum,count)</h4><p><strong><em>注意：多行函数不能和普通字段以及单行函数混用，除非分组</em></strong></p><ol><li><p>Max(字段名)：返回该字段的最大值</p></li><li><p>Min(字段名)：返回该字段的最小值</p></li><li><p>Sum(字段名)：返回该字段的和</p></li><li><p>Avg(字段名)：返回该字段的返回值</p></li><li><p>Count：</p><pre><code>* Count(\*)：返回表的记录数* Count(字段名)：返回该字段的非空值数量* Count(distinct 字段名)：去除该字段重复后的数量</code></pre></li></ol><h4 id="3、转换函数"><a href="#3、转换函数" class="headerlink" title="3、转换函数"></a>3、转换函数</h4><h5 id="to-number-数值类型的字符-：将字符转换为数值"><a href="#to-number-数值类型的字符-：将字符转换为数值" class="headerlink" title="to_number(数值类型的字符)：将字符转换为数值"></a>to_number(数值类型的字符)：将字符转换为数值</h5><h5 id="to-char-数值或者日期-：将数值或日期转换为字符"><a href="#to-char-数值或者日期-：将数值或日期转换为字符" class="headerlink" title="to_char(数值或者日期)：将数值或日期转换为字符"></a>to_char(数值或者日期)：将数值或日期转换为字符</h5><ol><li><p>数值转换：</p><p>可以指定格式：</p><p>用9占位，例如999，999，999会将数字按照三个一组使用逗号隔开</p><p>用0补位，与9占位相似，但是如果真实数据位数不足会用0补位</p></li><li><p>日期转换：</p><p>to_char(‘日期’,’要转换的格式’)：使用指定格式转换(例如yyyy-mm-dd)</p><p>to_char(‘日期’)：使用oracle自带格式转换(自带格式为日月年，例如01-2月-2020)</p></li></ol><h5 id="to-date-日期格式的字符-：将字符转换为日期"><a href="#to-date-日期格式的字符-：将字符转换为日期" class="headerlink" title="to_date(日期格式的字符)：将字符转换为日期"></a>to_date(日期格式的字符)：将字符转换为日期</h5><hr><h3 id="四、多表查询"><a href="#四、多表查询" class="headerlink" title="四、多表查询"></a>四、多表查询</h3><h4 id="1、多表联合查询"><a href="#1、多表联合查询" class="headerlink" title="1、多表联合查询"></a>1、多表联合查询</h4><blockquote><p><strong>当需要获取的数据分布在多张表中，考虑多表联合查询</strong></p></blockquote><ol><li><p>SQL92方式</p><ul><li><p>笛卡尔积：</p><p>​    将多个表的数据进行一一对应，所得结果为多表的笛卡尔积。结果数量为所有表的数据数量的乘积。 最终呈现的只有一张表。</p><pre class=" language-plsql"><code class="language-plsql">--同时查询A，B两表select * from A,B</code></pre><ul><li><p>等值连接筛选：</p><p>​    先做表的笛卡尔积，然后筛选，筛选的条件为等值时的筛选叫等值连接筛选。</p><pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c=B.d--公共字段应用 表名.字段名select A.C,B.C from A,B where A.c=B.d</code></pre></li></ul></li><li><p>不等值连接筛选：</p><pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c>=B.d and A.e<=B.f</code></pre></li><li><p>自连接：(在同一个表A里面查询)</p><pre class=" language-plsql"><code class="language-plsql">select * from A a1,A a2 where a1.c=a2.d and a1.e<=a2.f</code></pre></li><li><p>外连接：(在做等值连接时某表字段没有值但又需要显示时在一边使用“(+)”显示另一边的空字段)</p><p>​    左外连接：(“(+)”在右边显示左边对应字段中为空的数据)</p><pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c=B.c(+)</code></pre><p>​    右外连接：(“(+)”在左边显示右边对应字段中为空的数据)</p><pre class=" language-plsql"><code class="language-plsql">select * from A,B where A.c(+)=B.c</code></pre></li></ul></li><li><p>SQL99方式：</p><p>​    <strong><em>注意：如果用on或using关键字对结果进筛选，必须使用inner join作为表与表的连接，其中inner可以省略</em></strong></p><ul><li><p>笛卡尔积：使用cross join关键字</p><pre class=" language-plsql"><code class="language-plsql">select * from A cross join B</code></pre></li></ul><ul><li><p>筛选：</p><p>​    自然连接：使用natural join关键字(等值筛选)</p><p>​        特点1：底层先笛卡尔积，然后按照所有同名同值字段进行筛选。</p><pre class=" language-plsql"><code class="language-plsql">select * from A natural join B</code></pre><p>​        如果只想按照部分相同值字段筛选要用using关键字(using括号里面的字段必须是同名同值字段)</p><pre class=" language-plsql"><code class="language-plsql">--字段c是同名同值字段select * from A natural join B using(c)--字段c和d都是同名同值字段select * from A inner join B using(c,d)</code></pre><p>​        如果只想按照同值不同名字段筛选要用on关键字(普通筛选建议用where不要用on筛选)</p><pre class=" language-plsql"><code class="language-plsql">select * from A inner join B on A.c=B.d where e>100</code></pre></li><li><p>外连接：(outer可以省略不写)</p><p>​    左外连接：</p><pre class=" language-plsql"><code class="language-plsql">select * from A left outer join B on A.c=B.d</code></pre><p>​    右外连接：</p><pre class=" language-plsql"><code class="language-plsql">select * from A right outer join B on A.c=B.d</code></pre><p>​    全外连接：</p><pre class=" language-plsql"><code class="language-plsql">select * from A full outer join B on A.c=B.d</code></pre></li></ul></li></ol><hr><h3 id="五、子查询"><a href="#五、子查询" class="headerlink" title="五、子查询"></a>五、子查询</h3><blockquote><p><strong>where子句中出现查询语句称为子查询</strong></p><p><strong>当查询的筛选条件不明确时，考虑使用子查询</strong></p></blockquote><ol><li><p>单行子查询</p><p>子查询的结果只有一个值</p></li><li><p>多行子查询</p><p>子查询的结果有多个值(用关键字any,all,in,not in)</p><ul><li>any 表示任意</li><li>all 表示所有</li><li>in 相当于“= any”</li><li>not in 相当于“&lt;&gt; any”</li></ul></li></ol>]]></content>
       
       
       <categories>
@@ -71,33 +71,6 @@
     
     
     <entry>
-      <title>对float数取小数点后给定位数的方法</title>
-      <link href="2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
-      <url>2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</url>
-      
-        <content type="html"><![CDATA[<h1 id="取小数点后给定位数"><a href="#取小数点后给定位数" class="headerlink" title="取小数点后给定位数"></a>取小数点后给定位数</h1><h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>j <span class="token operator">*</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">;</span></code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>其中j为浮点数，n是保留小数点后n位，即1位时10^n为10，2位时10^n为100……以此类推</p><h2 id="使用原理"><a href="#使用原理" class="headerlink" title="使用原理"></a>使用原理</h2><p>使用的是Math类中的round方法求浮点数小数点n位的四舍五入值</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>j为浮点数，如果设有i为整型，(float)i/10所得结果为xxx.0,使用该方法所得结果小数点后面n位都是0，应该改成(float)i/10.0</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java学习笔记 </category>
-          
-          <category> 实用方法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>自定义控件基础</title>
       <link href="2020/10/20/zi-ding-yi-kong-jian-ji-chu/"/>
       <url>2020/10/20/zi-ding-yi-kong-jian-ji-chu/</url>
@@ -119,6 +92,33 @@
         <tags>
             
             <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>对float数取小数点后给定位数的方法</title>
+      <link href="2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
+      <url>2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="取小数点后给定位数"><a href="#取小数点后给定位数" class="headerlink" title="取小数点后给定位数"></a>取小数点后给定位数</h1><h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>j <span class="token operator">*</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">;</span></code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>其中j为浮点数，n是保留小数点后n位，即1位时10^n为10，2位时10^n为100……以此类推</p><h2 id="使用原理"><a href="#使用原理" class="headerlink" title="使用原理"></a>使用原理</h2><p>使用的是Math类中的round方法求浮点数小数点n位的四舍五入值</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>j为浮点数，如果设有i为整型，(float)i/10所得结果为xxx.0,使用该方法所得结果小数点后面n位都是0，应该改成(float)i/10.0</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java学习笔记 </category>
+          
+          <category> 实用方法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
             
         </tags>
       
