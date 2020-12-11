@@ -83,6 +83,33 @@
     
     
     <entry>
+      <title>对float数取小数点后给定位数的方法</title>
+      <link href="2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
+      <url>2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="取小数点后给定位数"><a href="#取小数点后给定位数" class="headerlink" title="取小数点后给定位数"></a>取小数点后给定位数</h1><h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>j <span class="token operator">*</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">;</span></code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>其中j为浮点数，n是保留小数点后n位，即1位时10^n为10，2位时10^n为100……以此类推</p><h2 id="使用原理"><a href="#使用原理" class="headerlink" title="使用原理"></a>使用原理</h2><p>使用的是Math类中的round方法求浮点数小数点n位的四舍五入值</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>j为浮点数，如果设有i为整型，(float)i/10所得结果为xxx.0,使用该方法所得结果小数点后面n位都是0，应该改成(float)i/10.0</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java学习笔记 </tag>
+            
+            <tag> 实用方法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自定义控件基础</title>
       <link href="2020/10/20/zi-ding-yi-kong-jian-ji-chu/"/>
       <url>2020/10/20/zi-ding-yi-kong-jian-ji-chu/</url>
@@ -104,33 +131,6 @@
             <tag> 自定义控件 </tag>
             
             <tag> view </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>对float数取小数点后给定位数的方法</title>
-      <link href="2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/"/>
-      <url>2020/10/20/qu-xiao-shu-dian-hou-gei-ding-wei-shu-de-fang-fa/</url>
-      
-        <content type="html"><![CDATA[<h1 id="取小数点后给定位数"><a href="#取小数点后给定位数" class="headerlink" title="取小数点后给定位数"></a>取小数点后给定位数</h1><h2 id="代码演示"><a href="#代码演示" class="headerlink" title="代码演示"></a>代码演示</h2><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span>j <span class="token operator">*</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">10</span><span class="token operator">^</span>n<span class="token punctuation">;</span></code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>其中j为浮点数，n是保留小数点后n位，即1位时10^n为10，2位时10^n为100……以此类推</p><h2 id="使用原理"><a href="#使用原理" class="headerlink" title="使用原理"></a>使用原理</h2><p>使用的是Math类中的round方法求浮点数小数点n位的四舍五入值</p><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><p>j为浮点数，如果设有i为整型，(float)i/10所得结果为xxx.0,使用该方法所得结果小数点后面n位都是0，应该改成(float)i/10.0</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java学习笔记 </tag>
-            
-            <tag> 实用方法 </tag>
             
         </tags>
       
